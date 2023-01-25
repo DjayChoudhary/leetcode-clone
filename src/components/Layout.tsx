@@ -2,6 +2,7 @@ import Image from "next/image";
 import avatar from "@/assets/avatar.jpg";
 
 import { FaLinkedinIn } from "react-icons/fa";
+import Link from "next/link";
 export default function Layout() {
   return (
     <main className="mx-auto w-full p-4 max-w-screen-lg">
@@ -31,7 +32,9 @@ export default function Layout() {
             </button>
             <span className="text-gray-500 text-sm flex items-center gap-2">
               <FaLinkedinIn className="h-4 w-4" />
-              <span className="">DhananjayChoudhary</span>
+              <Link href="https://www.linkedin.com/in/dhananjaychoudhary/">
+                <span className="">DhananjayChoudhary</span>
+              </Link>
             </span>
             <span className="-mt-2 border-b border-b-gray-200 h-px w-full"></span>
           </div>
